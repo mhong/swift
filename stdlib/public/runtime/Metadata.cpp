@@ -2774,6 +2774,7 @@ allocateWitnessTable(GenericWitnessTable *genericTable,
   size_t numMandatoryRequirements =
     protocol->NumMandatoryRequirements + WitnessTableFirstRequirementOffset;
   assert(numPatternWitnesses >= numMandatoryRequirements);
+  (void)numMandatoryRequirements;
 
   // The total number of requirements.
   size_t numRequirements =
